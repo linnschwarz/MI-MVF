@@ -21,7 +21,13 @@ project/
 - `rawdata_xdf`: Contains all the raw .xdf files.
 - `scripts`: Contains MATLAB scripts for data processing, preparation for statistical analysis in JASP (JASP Team, 2025, version 0.95.4) as well as creating plots.
 - `electrodeposition_digitizer`: Contains .elc files for the digitized electrode positions with the cap positioned as used during data acquisition (i.e., systematic posterior displacement), and with the cap correctly aligned according to the anatomical landmarks nasion, inion, and the left and right preauricular points.
-  
+
+## Electrode Positions and Channel Nomenclature
+
+Due to a systematic posterior displacement of the EEG cap during data acquisition, nominal electrode labels do not longer correspond to their locations in the 10-20 system. Electrode positions were digitized for both the intended and actual cap placement, and channel coordinates were adjusted accordingly.
+
+The original channel labels were retained in the data and analysis scripts. Channels used for the sensorimotor analyses (FC1, FC2, C3, and C4) were selected based on their actual spatial locations after accounting for the cap displacement, rather than based on their original channel labels.
+
 ## Requirements
 - MATLAB
 - fieldtrip toolbox (fieldtrip-20260615 from https://github.com/fieldtrip/fieldtrip)
