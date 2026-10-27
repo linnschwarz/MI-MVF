@@ -15,11 +15,13 @@ To run the analysis pipeline, the following directory structure is expected:
 project/
 ├── rawdata_xdf/
 ├── scripts/
+├── fieldtrip-master/
 └── electrodeposition_digitizer/
 ```
 
 - `rawdata_xdf`: Contains all the raw .xdf files.
 - `scripts`: Contains MATLAB scripts for data processing, preparation for statistical analysis in JASP (JASP Team, 2025, version 0.95.4) as well as creating plots.
+- `fieldtrip-master`: Contains fieldtrip toolbox (fieldtrip-20260615 from https://github.com/fieldtrip/fieldtrip).
 - `electrodeposition_digitizer`: Contains .elc files for the digitized electrode positions with the cap positioned as used during data acquisition (i.e., systematic posterior displacement), and with the cap correctly aligned according to the anatomical landmarks nasion, inion, and the left and right preauricular points.
 
 ## Electrode Positions and Channel Nomenclature
