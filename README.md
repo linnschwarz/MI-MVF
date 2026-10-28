@@ -39,12 +39,13 @@ The original channel labels were retained in the data and analysis scripts. Chan
 ## Usage
 The analysis pipeline expects the `rawdata_xdf` directory to contain the raw .xdf files before running the scripts.
 
-The `rawdata_digitized` and `data` directories do not need to be created or populated manually. They are generated automatically during the analysis pipeline:
+The `rawdata_digitized`, `rawdata_EMG`, and `data` directories do not need to be created or populated manually. They are generated automatically during the analysis pipeline:
 
 - `rawdata_digitized`: Contains all the raw .set files with updated channel locations according to the digitized electrode positions with the cap positioned as used during data acquisition (i.e., systematic posterior displacement).
+- `rawdata_EMG`: Contains all the raw EMG .set files.
 - `data`: Contains processed data and plots.
 
-The individual scripts access files from `rawdata_xdf`, `rawdata_digitized`, and/or `data`, depending on the respective processing step. Therefore, the scripts should be run in order. 
+The individual scripts access files from `rawdata_xdf`, `rawdata_digitized`, `rawdata_EMG`, and/or `data`, depending on the respective processing step. Therefore, the scripts should be run in order. 
 
 ## Data Availability
 The data underlying the analyses are available upon request from the corresponding author.
